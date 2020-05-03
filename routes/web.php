@@ -35,3 +35,7 @@ Route::post('email', ['uses' => 'EmailController@postForm', 'as' => 'storeEmail'
 
 Route::resource('user', 'UserController');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
